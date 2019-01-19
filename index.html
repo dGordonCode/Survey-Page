@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>  
+    <title>Survey Page</title>
+    <link href="style.css" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Thasadith" rel="stylesheet">
+  </head>
+  
+  <body>
+    <h1 id="title">Survey Page</h1>
+    <div id="form-inside">
+      <p id="description">Let us know how we're doing here at GQueCuts!</p>
+      <form id="survey-form">
+        <div class="rows">
+             <div class="labels">
+               <label id="name-label" for="name">*Name:</label>
+             </div>
+             <div class="entry">
+               <input type="text" name="name" id="name" class="input" placeholder="Enter your name" required>
+             </div>
+        </div>
+        <div class="rows">
+             <div class="labels">
+               <label id="email-label" for="email">*Email:</label>
+             </div>
+             <div class="entry">
+               <input type="email" name="email" id="email" class="input" placeholder="Enter email" required>
+             </div>
+        </div>
+        <div class="rows">
+             <div class="labels">
+               <label id="number-label" for="age">*Age:</label>
+             </div>
+             <div class="entry">
+               <input type="number" name="age" id="number" min="1" max="100" class="input" placeholder="Age" required>
+             </div>
+        </div>
+        <div class="rows">
+             <div class="labels">
+               <label for="refferals">How did you hear about us?</label>
+             </div>
+             <div class="entry">
+               <select id="dropdown" name="refferal" class="dropdown">
+                 <option disabled value> Choose an option</option>
+                 <option value="radio">Radio</option>
+                 <option value="instagram">Instagram</option>
+                 <option value="twitter">Twitter</option>
+                 <option value="google">Google</option>
+                 <option value="other">Other</option>
+               </select>
+             </div>
+        </div>
+        <div class="rows">
+             <div class="labels">
+               <label for="rating">*How likely are you to recommend this shop to others?</label>
+             </div>
+             <div class="entry">
+               <ul style="list-style: none;">
+                 <li class="radio">
+                   <label>
+                     <input type= "radio" name="radio-buttons" value="1" class="ratings">
+                     I'm definitely going to!
+                   </label>
+                 <li class="radio">
+                   <label>
+                      <input type= "radio" name="radio-buttons" value="1" class="ratings">
+                     I might..
+                   </label>
+                 <li class="radio">
+                   <label>
+                      <input type= "radio" name="radio-buttons" value="1" class="ratings">
+                     I will not be.
+                   </label>
+               </ul>  
+             </div>
+        </div>
+        <div class="rows">
+          <div class="labels">
+            <label for="like-most">What do you like most about our shop:</label>
+          </div>
+        <div class="entry">
+          <select id="like-most" name="like-most" class="dropdown">
+                 <option disabled value> Choose an option</option>
+                 <option value="good vibes">Good Vibes</option>
+                 <option value="fast cuts">Fast Cuts</option>
+                 <option value="ability to make appointments">Ability to Make Appointments</option>
+                 <option value="great barbers">Great Barbers</option>
+          </select>
+        </div>
+       </div>
+      <div class="rows">
+        <div class="labels">
+          <label for="improvements">What do we need to work on?<br>(Check all that apply)</label>
+        </div>
+        <div class="entry">
+          <ul style="list-style: none;">
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" name="improve" value="1" class="usersuggestions">Long Wait Time</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" name="improve" value="1" class="usersuggestions">Vibes</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" name="improve" value="1" class="usersuggestions">Barber Quality</label>
+            </li>
+            <li class="checkbox">
+              <label>
+                <input type="checkbox" name="improve" value="1" class="usersuggestions">Not Enough Barbers</label>
+            </li>
+          </ul>
+        </div>
+        </div>
+      <div class="row">
+        <div class="labels">
+          <label for="comments">Any comments or suggestions?</label>
+        </div>
+        <div class="entry">
+          <textarea id="comments" name="comment" class="input" Placeholder="Enter your comment here..." style="height:50px;resize:vertical;"></textarea>
+        </div>
+      </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+   </div>
+  </body>  
+</html>  
